@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/content.js" charset="utf-8"></script>
+  <script src="js/button.js" charset="utf-8"></script>
+  <style>
+    html {
+      background: #f8f9fa;
+      width: 360px;
+    }
+
+    .wrapper {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <my-input
+      tips="输入域名，不需要包含协议头"
+      placeholder="luban.jinritemai.com"
+      name="domain"
+      rule="[a-zA-Z0-9.]*"
+    ></my-input>
+    <my-input
+      tips="输入cookie字符串"
+      placeholder="_ga=GA; _gid=GA1"
+      name="cookie"
+      rule="[0-9a-zA-Z_-]+\s*=\s*[0-9a-zA-Z-_]+"
+    ></my-input>
+    <my-btn btntxt="提交" id="submit">
+  </div>
+  <script src="js/background.js"></script>
+</body>
+
+</html>
